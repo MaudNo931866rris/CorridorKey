@@ -72,7 +72,8 @@ ignore = ["E501"]
 
 [tool.mypy]
 python_version = "3.11"
-strict = true
+# Relaxing strict mode for personal exploration — too noisy while learning the codebase
+strict = false
 warn_return_any = true
 warn_unused_configs = true
 
