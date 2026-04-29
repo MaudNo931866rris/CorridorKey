@@ -76,6 +76,8 @@ python_version = "3.11"
 strict = false
 warn_return_any = true
 warn_unused_configs = true
+# Also ignoring missing imports for third-party libs that don't ship type stubs
+ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
