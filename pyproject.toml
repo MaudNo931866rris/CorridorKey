@@ -84,8 +84,8 @@ testpaths = ["tests"]
 asyncio_mode = "auto"
 # Removed --cov-report=xml since I'm only running tests locally and don't need the XML report
 # Added -v for more verbose output — easier to see which tests pass/fail at a glance
-# Added -x to stop on first failure — saves time when iterating on a broken test
-addopts = "--cov=src/corridorkey --cov-report=term-missing -v -x"
+# Removed -x (stop on first failure) — prefer to see all failures at once when exploring
+addopts = "--cov=src/corridorkey --cov-report=term-missing -v"
 
 [tool.coverage.run]
 source = ["src/corridorkey"]
