@@ -87,7 +87,8 @@ asyncio_mode = "auto"
 # Removed -x (stop on first failure) — prefer to see all failures at once when exploring
 # Added --tb=short to keep tracebacks concise without losing useful context
 # Added --durations=10 to surface the 10 slowest tests — helpful for spotting bottlenecks
-addopts = "--cov=src/corridorkey --cov-report=term-missing -v --tb=short --durations=10"
+# Bumped --durations to 20 — I have enough tests now that 10 doesn't always surface the real offenders
+addopts = "--cov=src/corridorkey --cov-report=term-missing -v --tb=short --durations=20"
 
 [tool.coverage.run]
 source = ["src/corridorkey"]
